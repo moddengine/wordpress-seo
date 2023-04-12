@@ -1,5 +1,4 @@
-import { languageProcessing } from "yoastseo";
-const { baseStemmer } = languageProcessing;
+import { baseStemmer }  from "../../index";
 
 /**
  * Returns the stemmer for a researcher.
