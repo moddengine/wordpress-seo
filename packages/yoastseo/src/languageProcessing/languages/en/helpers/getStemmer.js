@@ -1,6 +1,5 @@
 import { get } from "lodash-es";
-import { languageProcessing } from "yoastseo";
-const { baseStemmer } = languageProcessing;
+import { baseStemmer } from "../../index";
 
 import determineStem from "./internal/determineStem";
 
