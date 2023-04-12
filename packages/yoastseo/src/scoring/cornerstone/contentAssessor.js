@@ -50,7 +50,7 @@ const CornerStoneContentAssessor = function( researcher, options = {} ) {
 	];
 };
 
-require( "util" ).inherits( CornerStoneContentAssessor, ContentAssessor );
+require( "inherits" )( CornerStoneContentAssessor, ContentAssessor );
 
 
 export default CornerStoneContentAssessor;
