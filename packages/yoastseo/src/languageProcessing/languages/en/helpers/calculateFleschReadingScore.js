@@ -1,5 +1,4 @@
-import { helpers } from "yoastseo";
-const { formatNumber } = helpers;
+import { formatNumber } from '../../../../helpers';
 
 /**
  * Returns the Flesch reading score for English.
