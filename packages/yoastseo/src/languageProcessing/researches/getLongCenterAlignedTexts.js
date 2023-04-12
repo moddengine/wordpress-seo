@@ -1,6 +1,5 @@
 import { flatten } from "lodash-es";
-import { languageProcessing } from "yoastseo";
-const { sanitizeString, helpers } = languageProcessing;
+import { sanitizeString, helpers } from '../index';
 
 const centerAlignRegex = /class=["'].*?has-text-align-center.*?["']/i;
 const paragraphsRegex = /<p(?:[^>]+)?>(.*?)<\/p>/ig;

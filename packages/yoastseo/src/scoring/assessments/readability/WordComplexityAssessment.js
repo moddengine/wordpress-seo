@@ -1,11 +1,12 @@
 import { __, sprintf } from "@wordpress/i18n";
 import { merge } from "lodash-es";
 
-import { AssessmentResult, helpers, languageProcessing, Assessment, values } from "yoastseo";
+import  Assessment  from '../assessment';
+import  AssessmentResult from "../../../values/AssessmentResult";
 
-const { createAnchorOpeningTag } = helpers;
-const { collectMarkingsInSentence } = languageProcessing;
-const { Mark } = values;
+import { createAnchorOpeningTag } from '../../../helpers';
+import { collectMarkingsInSentence } from '../../../languageProcessing';
+import { Mark } from '../../../values';
 
 /**
  * Represents the assessment that checks whether there are too many complex words in the text.

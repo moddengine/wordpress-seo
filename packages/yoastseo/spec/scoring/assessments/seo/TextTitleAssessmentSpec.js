@@ -1,8 +1,7 @@
 import TextTitleAssessment from "../../../../src/scoring/assessments/seo/TextTitleAssessment";
 
-import { values } from "yoastseo";
+import { Paper }  from "../../../../src/values/index";
 
-const { Paper } = values;
 
 describe( "a test to check whether a text has a title or not", () => {
 	const assessment = new TextTitleAssessment();

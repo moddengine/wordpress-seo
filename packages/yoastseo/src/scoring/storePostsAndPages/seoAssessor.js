@@ -1,7 +1,7 @@
-import { inherits } from "util";
-
-import { Assessor, assessments, helpers } from "yoastseo";
-const { createAnchorOpeningTag } = helpers;
+import inherits from "inherits";
+import Assessor from '../../scoring/assessor';
+import * as assessments from '../../scoring/assessments';
+import { createAnchorOpeningTag } from '../../helpers';
 
 const {
 	IntroductionKeywordAssessment,

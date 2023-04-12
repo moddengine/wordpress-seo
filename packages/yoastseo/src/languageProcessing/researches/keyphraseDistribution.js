@@ -1,7 +1,6 @@
 import { flattenDeep, max, uniq as unique, zipWith } from "lodash-es";
-import { languageProcessing } from "yoastseo";
 
-const { parseSynonyms, getSentences, mergeListItems, findWordFormsInString, markWordsInSentences } = languageProcessing;
+import { parseSynonyms, getSentences, mergeListItems, findWordFormsInString, markWordsInSentences } from '../index';
 
 /**
  * Checks whether at least half of the content words from the topic are found within the sentence.

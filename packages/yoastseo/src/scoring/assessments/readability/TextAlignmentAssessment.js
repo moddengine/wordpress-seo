@@ -1,10 +1,12 @@
 import { _n, sprintf } from "@wordpress/i18n";
 import { merge } from "lodash-es";
-import { Assessment, AssessmentResult, helpers, languageProcessing, values, markers } from "yoastseo";
-const { createAnchorOpeningTag } = helpers;
-const { stripHTMLTags } = languageProcessing;
-const { Mark } = values;
-const { addMark } = markers;
+import { Assessment } from '../assessment';
+import  AssessmentResult  from "../../../values/AssessmentResult";
+
+import { createAnchorOpeningTag } from '../../../helpers';
+import { stripHTMLTags } from '../../../languageProcessing';
+import { Mark } from '../../../values';
+import { addMark } from '../../../markers';
 
 /**
  * Represents the assessment that checks whether there is an over-use of center-alignment in the text.

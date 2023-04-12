@@ -1,10 +1,10 @@
 import { __, sprintf } from "@wordpress/i18n";
 import { merge } from "lodash-es";
 
-import { AssessmentResult, helpers, languageProcessing, Assessment } from "yoastseo";
-
-const { createAnchorOpeningTag } = helpers;
-const { unifyAllSpaces } = languageProcessing;
+import Assessment from '../assessment';
+import AssessmentResult from "../../../values/AssessmentResult";
+import { createAnchorOpeningTag } from '../../../helpers';
+import { unifyAllSpaces } from '../../../languageProcessing';
 
 /**
  * Represents the assessment that checks whether a text has a title.

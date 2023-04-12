@@ -1,8 +1,7 @@
 import InclusiveLanguageAssessment from "../../../../src/scoring/assessments/inclusiveLanguage/InclusiveLanguageAssessment";
 import assessments from "../../../../src/scoring/assessments/inclusiveLanguage/configuration/cultureAssessments";
-import { values } from "yoastseo";
+import {Paper} from "../../../../src/values";
 
-const { Paper } = values;
 
 describe( "inclusive Language Assessments", () => {
 	it( "should signal it does not have enough content for assessment for short texts", () => {

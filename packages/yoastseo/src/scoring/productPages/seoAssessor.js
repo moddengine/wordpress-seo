@@ -1,13 +1,15 @@
-import { inherits } from "util";
+import  inherits from "inherits";
 
-import { Assessor, assessments, helpers } from "yoastseo";
+import Assessor from "../../scoring/assessor";
+
+import * as assessments from "../../scoring/assessments";
 
 // Product-specific assessments.
 import ImageAltTagsAssessment from "../assessments/seo/ImageAltTagsAssessment";
 import ProductIdentifiersAssessment from "../assessments/seo/ProductIdentifiersAssessment";
 import ProductSKUAssessment from "../assessments/seo/ProductSKUAssessment";
 
-const { createAnchorOpeningTag } = helpers;
+import { createAnchorOpeningTag } from '../../helpers';
 
 const {
 	IntroductionKeywordAssessment,

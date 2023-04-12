@@ -1,7 +1,6 @@
 import { flatMap } from "lodash-es";
-import { languageProcessing } from "yoastseo";
 
-const { getWords, getSentences } = languageProcessing;
+import { getWords, getSentences } from '../index'
 
 /**
  * An object containing the results of the complex words research for a single sentence.
