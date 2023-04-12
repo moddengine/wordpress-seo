@@ -1,7 +1,6 @@
 // "use strict";
 import { isUndefined } from "lodash-es";
-import { languageProcessing } from "yoastseo";
-const { buildFormRule, createRulesFromArrays } = languageProcessing;
+import { buildFormRule, createRulesFromArrays } from "../../index";
 
 const vowelRegex = /([aeiouy])/g;
 
