@@ -1,4 +1,4 @@
-import { inherits } from "util";
+import inherits from "inherits";
 
 import Assessor from "./assessor.js";
 import IntroductionKeyword from "./assessments/seo/IntroductionKeywordAssessment.js";
