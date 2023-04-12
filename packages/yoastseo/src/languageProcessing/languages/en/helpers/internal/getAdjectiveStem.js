@@ -1,6 +1,5 @@
 // "use strict";
-import { languageProcessing } from "yoastseo";
-const { buildFormRule, createRulesFromArrays } = languageProcessing;
+import { buildFormRule, createRulesFromArrays } from "../../index";
 
 /**
  * Constructs a function that checks if the input word can be a specific adjectival form.
