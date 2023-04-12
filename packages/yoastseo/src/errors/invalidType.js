@@ -1,5 +1,5 @@
 import "error-polyfill";
-import util from "util";
+import inherits from "inherits";
 
 /**
  * Throws an invalid type error
@@ -14,6 +14,6 @@ function InvalidTypeError( message ) {
 	this.message = message;
 }
 
-util.inherits( InvalidTypeError, Error );
+inherits( InvalidTypeError, Error );
 
 export default InvalidTypeError;
