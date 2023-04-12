@@ -1,5 +1,4 @@
-import { languageProcessing } from "yoastseo";
-const { AbstractResearcher } = languageProcessing;
+import { AbstractResearcher } from "../../index";
 
 // All config
 import firstWordExceptions from "./config/firstWordExceptions";
