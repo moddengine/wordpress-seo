@@ -40,7 +40,7 @@ const ContentAssessor = function( researcher, options = {} ) {
 	];
 };
 
-require( "util" ).inherits( ContentAssessor, Assessor );
+require( "inherits" )( ContentAssessor, Assessor );
 
 /**
  * Calculates the weighted rating for languages that have all assessments based on a given rating.
