@@ -1,5 +1,5 @@
 import "error-polyfill";
-import util from "util";
+import inherits from "inherits";
 
 /**
  * Error that means that an argument should be passed that wasn't passed.
@@ -16,6 +16,6 @@ function MissingArgumentError( message ) {
 	this.message = message;
 }
 
-util.inherits( MissingArgumentError, Error );
+inherits( MissingArgumentError, Error );
 
 export default MissingArgumentError;
