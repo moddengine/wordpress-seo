@@ -1,5 +1,5 @@
-import { languageProcessing } from "yoastseo";
-const { createRegexFromArray, getClauses } = languageProcessing;
+import { createRegexFromArray, getClauses } from "../../index";
+
 
 import Clause from "../values/Clause";
 import auxiliaries from "../config/internal/passiveVoiceAuxiliaries.js";
