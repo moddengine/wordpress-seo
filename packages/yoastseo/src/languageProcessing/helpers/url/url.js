@@ -1,5 +1,4 @@
 const urlFromAnchorRegex = /href=(["'])([^"']+)\1/i;
-import urlMethods from "url";
 
 /**
  * Removes a hash from a URL, assumes a well formed URL.
@@ -76,7 +75,7 @@ function areEqual( urlA, urlB ) {
  * @returns {string} The domain name of the URL.
  */
 function getHostname( url ) {
-	url = urlMethods.parse( url );
+	url = new URL(url);
 
 	return url.hostname;
 }
@@ -90,7 +89,7 @@ function getHostname( url ) {
  * @returns {string|null} The protocol of the URL or null if no protocol is present.
  */
 function getProtocol( url ) {
-	return urlMethods.parse( url ).protocol;
+	return new URL( url ).protocol;
 }
 
 /**
@@ -102,7 +101,7 @@ function getProtocol( url ) {
  * @returns {boolean} Whether or not the anchor URL is internal.
  */
 function isInternalLink( anchorUrl, siteUrlOrDomain ) {
-	const parsedAnchorUrl = urlMethods.parse( anchorUrl, false, true );
+	const parsedAnchorUrl = new URL( anchorUrl );
 	const anchorUrlHostName = parsedAnchorUrl.hostname;
 
 	// Check if the anchor URL starts with a single slash.
@@ -126,7 +125,7 @@ function isInternalLink( anchorUrl, siteUrlOrDomain ) {
 	}
 
 	// If the siteUrlOrDomain variable is a URL and it shares the hostname with the anchor URL, it's an internal link.
-	const parsedSiteUrlOrDomain = urlMethods.parse( siteUrlOrDomain );
+	const parsedSiteUrlOrDomain = new URL( siteUrlOrDomain );
 	const siteUrlOrDomainHostName = parsedSiteUrlOrDomain.hostname;
 	return anchorUrlHostName === siteUrlOrDomainHostName;
 }
