@@ -1,4 +1,4 @@
-import { inherits } from "util";
+import inherits from "inherits";
 
 import IntroductionKeywordAssessment from "../assessments/seo/IntroductionKeywordAssessment";
 import KeyphraseLengthAssessment from "../assessments/seo/KeyphraseLengthAssessment";
