@@ -1,4 +1,4 @@
-import { createRegexFromArray, getClauses } from "../../index";
+import { createRegexFromArray, getClauses } from "../../../index";
 
 
 import Clause from "../values/Clause";

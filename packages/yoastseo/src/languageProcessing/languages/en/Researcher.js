@@ -1,4 +1,4 @@
-import { AbstractResearcher } from "../../index";
+import AbstractResearcher from "../../index";
 
 // All config
 import firstWordExceptions from "./config/firstWordExceptions";

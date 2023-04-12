@@ -5,8 +5,7 @@ import {
 } from "../config/functionWords";
 import nonVerbsEndingEd from "../config/internal/passiveVoiceNonVerbEndingEd";
 import getParticiples from "../helpers/internal/getParticiples";
-import { languageProcessing } from "yoastseo";
-const { precedenceException, directPrecedenceException, values } = languageProcessing;
+import { precedenceException, directPrecedenceException, values } from  '../../../index';
 const Clause = values.Clause;
 
 /**

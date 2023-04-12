@@ -1,6 +1,6 @@
 // "use strict";
 import { isUndefined } from "lodash-es";
-import { buildFormRule, createRulesFromArrays } from "../../index";
+import { buildFormRule, createRulesFromArrays } from "../../../../index";
 
 const vowelRegex = /([aeiouy])/g;
 

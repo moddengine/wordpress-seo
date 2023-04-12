@@ -1,5 +1,5 @@
 // "use strict";
-import { buildFormRule, createRulesFromArrays } from "../../index";
+import { buildFormRule, createRulesFromArrays } from "../../../../index";
 
 /**
  * Constructs a function that checks if the input word can be a specific adjectival form.

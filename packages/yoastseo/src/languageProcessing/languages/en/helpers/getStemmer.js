@@ -1,5 +1,5 @@
 import { get } from "lodash-es";
-import { baseStemmer } from "../../index";
+import { baseStemmer } from "../../../index";
 
 import determineStem from "./internal/determineStem";
 

@@ -1,5 +1,5 @@
 import { isUndefined, flatten } from "lodash-es";
-import { buildFormRule, createRulesFromArrays } from "../../index";
+import { buildFormRule, createRulesFromArrays } from "../../../../index";
 
 import getAdjectiveStem from "./getAdjectiveStem";
 import { getInfinitive, checkIrregulars as getIrregularVerbParadigm, endsWithIng } from "./getVerbStem.js";
