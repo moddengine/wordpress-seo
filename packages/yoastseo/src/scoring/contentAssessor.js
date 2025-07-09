@@ -6,15 +6,15 @@ import TransitionWords from "./assessments/readability/TransitionWordsAssessment
 import PassiveVoice from "./assessments/readability/PassiveVoiceAssessment.js";
 import SentenceBeginnings from "./assessments/readability/SentenceBeginningsAssessment.js";
 import TextPresence from "./assessments/readability/TextPresenceAssessment.js";
+import scoreToRating from "./interpreters/scoreToRating";
+import { map, sum } from "lodash-es";
+import inherits from "inherits";
 
 /*
 	Temporarily disabled:
 	var sentenceLengthInDescription = require( "./assessments/sentenceLengthInDescriptionAssessment.js" );
  */
 
-import scoreToRating from "./interpreters/scoreToRating";
-
-import { map, sum } from "lodash-es";
 
 /**
  * Creates the Assessor
@@ -40,7 +40,7 @@ const ContentAssessor = function( researcher, options = {} ) {
 	];
 };
 
-require( "inherits" )( ContentAssessor, Assessor );
+inherits( ContentAssessor, Assessor );
 
 /**
  * Calculates the weighted rating for languages that have all assessments based on a given rating.

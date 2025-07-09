@@ -1,11 +1,9 @@
 import { sprintf } from "@wordpress/i18n";
 import { last } from "lodash-es";
-
 import inclusiveLanguageAssessmentsConfigs from "../../../../src/scoring/assessments/inclusiveLanguage/configuration";
 import { SCORES } from "../../../../src/scoring/assessments/inclusiveLanguage/configuration/scores";
 import InclusiveLanguageAssessment from "../../../../src/scoring/assessments/inclusiveLanguage/InclusiveLanguageAssessment";
-
-const fs = require( "fs" );
+import fs from "fs";
 
 /**
  * Note: this file is not a regular Jest test, as it exports the inclusive language configuration, rather than testing it.

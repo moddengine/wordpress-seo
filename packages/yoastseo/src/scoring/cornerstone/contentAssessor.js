@@ -7,12 +7,14 @@ import TransitionWords from "../assessments/readability/TransitionWordsAssessmen
 import PassiveVoice from "../assessments/readability/PassiveVoiceAssessment.js";
 import SentenceBeginnings from "../assessments/readability/SentenceBeginningsAssessment.js";
 import TextPresence from "../assessments/readability/TextPresenceAssessment.js";
+import inherits from "inherits";
 
 /*
  Temporarily disabled:
 
  var sentenceLengthInDescription = require( "./assessments/readability/sentenceLengthInDescriptionAssessment.js" );
  */
+
 
 /**
  * Creates the Assessor
@@ -50,7 +52,7 @@ const CornerStoneContentAssessor = function( researcher, options = {} ) {
 	];
 };
 
-require( "inherits" )( CornerStoneContentAssessor, ContentAssessor );
+inherits( CornerStoneContentAssessor, ContentAssessor );
 
 
 export default CornerStoneContentAssessor;
